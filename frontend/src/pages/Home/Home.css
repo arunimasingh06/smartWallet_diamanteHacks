@@ -13,7 +13,7 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 ;
 }
 
 
@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     background-color: #1a1a1a;
 }
 
@@ -44,7 +44,7 @@ body {
 .hero p {
     font-size: 18px;
     color: #C0C0C0;
-    margin-bottom: 40px;
+    
 }
 
 .hero .btn-primary {
@@ -95,11 +95,10 @@ body {
 .points-section {
     padding: 30px;
     padding-top: 60px;
-
     background-color: #3F3F3F;
     margin-left: 100px;
     margin-right: 100px;
-   border-radius: 24px;
+    border-radius: 24px;
     justify-content: space-around;
     align-items: center;
 }
@@ -171,8 +170,8 @@ body {
     text-align: center;
     background-color: #575D62;
     padding: 30px;
-    width: 400px;
-    height: 280px;
+    width: 450px;
+    height: 300px;
     gap: 10px;
     border-radius: 16px;
     display: flex;
@@ -182,7 +181,6 @@ body {
     margin-left: 32px;
 
     box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.10);
-
 
 }
 
@@ -273,5 +271,117 @@ body {
     font-weight: 400;
     line-height: 20px;
     margin-top: -8px;
+}
+
+/*SLIDE-2*/
+
+.container {
+    display: flex;
+    padding: 136px 160px; /* Adjust padding for better centering */
+    flex-direction: column;
+    justify-content: center; /* Aligns items vertically in the center */
+    align-items: center; /* Aligns items horizontally in the center */
+    gap: 50px; /* Adjusted for better spacing */
+    max-width: 1500px;
+    margin: 0 auto; /* Centers container horizontally on the page */
+}
+
+.header h1 {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 87px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 89px; 
+    letter-spacing: -0.96px;
+    text-align: center;
+}
+
+.header p {
+    color: #C0C0C0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: -8px;
+}
+
+.features {
+    display: flex;
+    justify-content: center; /* Ensures the cards are centered */
+    gap: 120px; /* More consistent spacing between feature cards */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    max-width: 100%; /* Makes sure it stays within the viewport width */
+    
+}
+
+.feature-card {
+    background-color: #3F3F3F;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking of the card on smaller screens */
+    height: 600px;
+    padding: 5px 32px 84px 32px;/* Adjust padding for better spacing inside */
+}
+
+.feature-card img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.feature-card h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #FFF;
+}
+
+.feature-card p {
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; 
+    letter-spacing: -0.1px;
+    color: #AFAFAF;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #575D62;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #FFF;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(129, 129, 129);
+}
+
+.cta {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Center the call-to-action button */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
