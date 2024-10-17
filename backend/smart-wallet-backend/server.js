@@ -1,16 +1,11 @@
-const express = require("express")
+const express = require("express");
+const connectDB = require('./config/database');
+const authRoutes = require('./routes/authRoutes');
+
 const app = express();
-const PORT =  3000;
+const PORT = 3000;
 
+app.use(express.json());
+app.use('/api/auth', authRoutes); // Ensure this line is correct
 
-app.get('/' , (req , res ) => {
-  res.send("hi there server is listening")
-})
-
-
-
-
-
-
-console.log("app is listening")
-app.listen(PORT , console.log(`Server is listening on port ${PORT}`))
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
